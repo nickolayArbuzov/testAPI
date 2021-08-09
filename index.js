@@ -4,7 +4,7 @@ const corsMiddleware = require("./middleware/cors.middleware");
 const testAPIRouter = require("./routes/testAPI.routes");
 
 const app = express();
-const PORT = config.get("serverPort");
+const PORT = process.env.PORT;
 
 app.use(corsMiddleware);
 app.use(express.json());
