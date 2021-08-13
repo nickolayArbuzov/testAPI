@@ -9,7 +9,7 @@ class GetGitController {
             }
             
             let {data} = await axios.get(
-                `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=44.49944,34.15528&radius=500&key=${process.env.API_KEY}`
+                `https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=44.55278,34.28750&radius=500&key=${process.env.API_KEY}`
             )
             let returnedData = data.results;
             if (data.next_page_token) {
